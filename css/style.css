@@ -16,6 +16,11 @@ h1 {
 
 }
 
+.container{
+  max-width: 1325px;
+}
+
+
 .preview h1{
   font-size: 120%;
   font-variant: normal;
@@ -68,7 +73,7 @@ h1 {
 
 /*four column design */
 
-@media screen and (min-width: 991px){
+@media screen and (min-width: 1220px){
   .preview {
   margin: 1%;
   width: 21%;
