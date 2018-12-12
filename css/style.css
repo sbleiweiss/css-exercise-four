@@ -8,39 +8,68 @@ body {
 }
 
 h1 {
+  font-size: 120%;
+  font-variant: small-caps;
+  font-family: system-ui, sans-serif;
+  padding: 20px;
+  text-align: center;
+
 }
 
 .preview h1{
+  font-size: 120%;
+  font-variant: normal;
+  font-family: serif;
   padding:20px;
+  text-align: left;
 }
 
 .preview {
   height: 280px;
   background-size: cover;
-  width: 450px;
+  width: 95%;
   float: left;
+  margin: 8px;
 }
 
+.preview::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 .baku {
   background-image: url(../images/baku.jpg);
+  background-color: #000;
 }
 
 .london {
   background-image: url(../images/london.png);
+  background-color: #000;
 }
 
 .madrid {
   background-image: url(../images/madrid.jpg);
+  background-color: #000;
 }
 
 .rome {
   background-image: url(../images/rome.jpg);
+  background-color: #000;
 }
 
+/*two column design */
 @media screen and (min-width: 575px){
    .preview {
     margin: 1%;
     width: 48%;
   }
+}
+
+/*four column design */
+
+@media screen and (min-width: 991px){
+  .preview {
+  margin: 1%;
+  width: 21%;
 }
